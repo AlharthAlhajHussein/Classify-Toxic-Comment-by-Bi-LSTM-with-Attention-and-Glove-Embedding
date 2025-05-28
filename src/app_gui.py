@@ -5,24 +5,11 @@ import os
 
 # Define paths relative to this script's location (LSTM directory)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# Assuming 'Submissions' is a subdirectory within the 'LSTM' directory
-# If 'Submissions' is in the project root, adjust MODEL_DIR accordingly
-MODEL_DIR = os.path.join(BASE_DIR, 'model and tokenizer')
 
-# Check if the Submissions directory and files exist
-if not os.path.isdir(MODEL_DIR):
-    # Fallback: try to find Submissions in the parent directory if app_gui.py is in LSTM
-    # This handles the case where Submissions is at project root, not inside LSTM.
-    potential_model_dir = os.path.join(os.path.dirname(BASE_DIR), 'Submissions', '97649')
-    if os.path.isdir(potential_model_dir):
-        MODEL_DIR = potential_model_dir
-    else:
-        print(f"Error: Model directory not found at {MODEL_DIR} or {potential_model_dir}")
-        # You might want to raise an error or handle this more gracefully
+MODEL_DIR = os.path.join(BASE_DIR, '')
 
 MODEL_PATH = os.path.join(MODEL_DIR, 'toxic_model.keras')
 DATA_PATH = os.path.join(MODEL_DIR, 'preprocessing_data.pkl')
-
 
 class ToxicityApp(ctk.CTk):
     def __init__(self, *args, **kwargs):
