@@ -60,7 +60,7 @@ The project also features an interactive GUI where users can input text and rece
 
 **Example Placeholder:**
 
-![GUI Screenshot Placeholder](images\app_screenshot.png)
+![GUI Screenshot Placeholder](https://github.com/AlharthAlhajHussein/Classify-Toxic-Comment-by-Bi-LSTM-with-Attention-and-Glove-Embedding/blob/main/images/app_screenshot.png)
 
 *Caption: The Toxic Comment Analyzer GUI displaying probability scores for a sample comment.* 
 
@@ -139,8 +139,8 @@ The model is designed for datasets typically used in toxic comment classificatio
 
 1.  **Clone the Repository:**
     ```bash
-    git clone <your-github-repository-url>
-    cd <repository-name>/LSTM # Navigate into the LSTM directory
+    git clone https://github.com/AlharthAlhajHussein/Classify-Toxic-Comment-by-Bi-LSTM-with-Attention-and-Glove-Embedding.git
+    cd Classify-Toxic-Comment-by-Bi-LSTM-with-Attention-and-Glove-Embedding/src # Navigate into the src directory
     ```
 
 2.  **Create and Activate a Virtual Environment (Highly Recommended):**
@@ -153,7 +153,7 @@ The model is designed for datasets typically used in toxic comment classificatio
     ```
 
 3.  **Install Dependencies:**
-    Ensure you are in the `LSTM` directory where `requirements.txt` is located.
+    Ensure you are in the `src` directory where `requirements.txt` is located.
     ```bash
     pip install -r requirements.txt
     ```
