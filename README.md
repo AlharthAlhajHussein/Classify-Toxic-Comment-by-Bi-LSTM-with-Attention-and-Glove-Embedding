@@ -68,17 +68,17 @@ The project also features an interactive GUI where users can input text and rece
 
 ```
 📦 ToxicCommentClassification
- ┣ 📂 LSTM                         # Main project directory
+ ┣ 📂 src                         # Main project directory
  ┃ ┣ 📜 app_gui.py                 # The CustomTkinter GUI application
  ┃ ┣ 📜 model_utilities.py         # Core utilities for model, data, building, training, etc.
  ┃ ┣ 📜 clean_utilities.py         # Text cleaning and preprocessing logic
  ┃ ┣ 📜 bi-lstm-with-attention-and-glove-embedding-97-7.ipynb  # Notebook for model building training
+ ┃ ┣ 📜 toxic_model.keras        # Trained Keras model file
+ ┃ ┗ 📜 preprocessing_data.pkl   # Pickled tokenizer & other preprocessing objects
+ ┣ 📂 EDA
  ┃ ┣ 📜 EDAv1.2.ipynb              # Notebook for Exploratory Data Analysis on Toxic comments data
- ┃ ┣ 📂 model and tokenizer        # Directory for storing trained model and tokenizer 
- ┃ ┃ ┣ 📜 toxic_model.keras        # Trained Keras model file
- ┃ ┃ ┗ 📜 preprocessing_data.pkl   # Pickled tokenizer & other preprocessing objects
- ┃ ┣ 📜 README.md                  # This file
- ┃ ┗ 📜 requirements.txt           # Python package dependencies
+ ┃ 📜 README.md                  # This file
+ ┃ 📜 requirements.txt           # Python package dependencies
  ┣ 📜 train.csv                    # training dataset (e.g., from Kaggle)
  ┣ 📜 test.csv                     # test dataset (e.g., from Kaggle)
  ┣ 📜 test_labels.csv              # test labels predictions 
@@ -140,7 +140,7 @@ The model is designed for datasets typically used in toxic comment classificatio
 1.  **Clone the Repository:**
     ```bash
     git clone https://github.com/AlharthAlhajHussein/Classify-Toxic-Comment-by-Bi-LSTM-with-Attention-and-Glove-Embedding.git
-    cd Classify-Toxic-Comment-by-Bi-LSTM-with-Attention-and-Glove-Embedding/src # Navigate into the src directory
+    cd Classify-Toxic-Comment-by-Bi-LSTM-with-Attention-and-Glove-Embedding 
     ```
 
 2.  **Create and Activate a Virtual Environment (Highly Recommended):**
@@ -153,19 +153,22 @@ The model is designed for datasets typically used in toxic comment classificatio
     ```
 
 3.  **Install Dependencies:**
-    Ensure you are in the `src` directory where `requirements.txt` is located.
+    Ensure you are in the `Classify-Toxic-Comment-by-Bi-LSTM-with-Attention-and-Glove-Embedding` directory where `requirements.txt` is located.
     ```bash
     pip install -r requirements.txt
     ```
 
 4.  **Model and Preprocessing Files:**
-    Ensure your trained model (`toxic_model.keras`) and preprocessing data (`preprocessing_data.pkl`) are located in the `LSTM/Submissions/97649/` directory. If your model version or path differs, update the `MODEL_PATH` and `DATA_PATH` variables in `app_gui.py`.
+    Ensure your trained model (`toxic_model.keras`) and preprocessing data (`preprocessing_data.pkl`) are located in the `src` directory. If your model version or path differs, update the `MODEL_PATH` and `DATA_PATH` variables in `app_gui.py`.
 
 ## 🚀 Usage
 
 **1. Running the Toxic Comment Analyzer GUI:**
 
-   -   Navigate to the `LSTM` directory in your terminal.
+   -   Navigate to the `src` directory in your terminal:
+       ```bash
+       cd src
+       ```
    -   Execute the GUI application:
        ```bash
        python app_gui.py
@@ -175,8 +178,8 @@ The model is designed for datasets typically used in toxic comment classificatio
 **2. Model Training and Exploration (Jupyter Notebooks):**
 
    -   To explore the data or retrain/experiment with the model, open and run the Jupyter Notebooks:
-       -   `EDAv1.2.ipynb`: For detailed exploratory data analysis.
-       -   `bi-lstm-with-attention-and-glove-embedding-97-7.ipynb`: For the model training pipeline, experimentation with different architectures (like self-attention, multi-head attention), and evaluation.
+       -   `EDA/EDAv1.2.ipynb`: For detailed exploratory data analysis.
+       -   `src/bi-lstm-with-attention-and-glove-embedding-97-7.ipynb`: For the model training pipeline, experimentation with different architectures (like self-attention, multi-head attention), and evaluation.
 
 ## 🤝 Contributing
 
