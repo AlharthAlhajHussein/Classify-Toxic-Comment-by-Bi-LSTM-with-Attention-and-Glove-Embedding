@@ -67,7 +67,7 @@ The project also features an interactive GUI where users can input text and rece
 ## 📂 Project Structure
 
 ```
-📦 ToxicCommentClassification
+📦 Classify-Toxic-Comment-by-Bi-LSTM-with-Attention-and-Glove-Embedding
  ┣ 📂 src                         # Main project directory
  ┃ ┣ 📜 app_gui.py                 # The CustomTkinter GUI application
  ┃ ┣ 📜 model_utilities.py         # Core utilities for model, data, building, training, etc.
@@ -76,14 +76,14 @@ The project also features an interactive GUI where users can input text and rece
  ┃ ┣ 📜 toxic_model.keras        # Trained Keras model file
  ┃ ┗ 📜 preprocessing_data.pkl   # Pickled tokenizer & other preprocessing objects
  ┣ 📂 EDA
- ┃ ┣ 📜 EDAv1.2.ipynb              # Notebook for Exploratory Data Analysis on Toxic comments data
+ ┃ ┗ 📜 EDAv1.2.ipynb              # Notebook for Exploratory Data Analysis on Toxic comments data
+ ┃ 📂 Images                       # Optional: For storing images used in README
+ ┃ ┗ 📜 gui_screenshot.png         # (Example: actual GUI screenshot)
  ┃ 📜 README.md                  # This file
  ┃ 📜 requirements.txt           # Python package dependencies
  ┣ 📜 train.csv                    # training dataset (e.g., from Kaggle)
  ┣ 📜 test.csv                     # test dataset (e.g., from Kaggle)
- ┣ 📜 test_labels.csv              # test labels predictions 
- ┗ 📂 Images                       # Optional: For storing images used in README
-   ┗ 📜 gui_screenshot.png         # (Example: actual GUI screenshot)
+ ┗ 📜 test_labels.csv              # test labels predictions  
 ```
 
 ## 🛠️ Technology Stack
