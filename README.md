@@ -3,7 +3,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![TensorFlow Version](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
 [![Keras Badge](https://img.shields.io/badge/Keras-Deep_Learning-red.svg)](https://keras.io/)
-<!--[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) <!-- You can create a LICENSE file -->
+[![License](https://img.shields.io/badge/License-Aleppo-green.svg)]((https://opensource.org/licenses/Aleppo)) 
 
 This project presents a robust system for detecting and classifying toxic comments into six categories: `toxic`, `severe_toxic`, `obscene`, `threat`, `insult`, and `identity_hate`. It employs a Bidirectional LSTM (Bi-LSTM) model enhanced with an Attention mechanism and pre-trained GloVe word embeddings. The model demonstrates strong performance, achieving a ROC AUC score of approximately 0.977. A key feature of this project is a user-friendly Graphical User Interface (GUI) built with CustomTkinter, allowing for easy, real-time analysis of comments.
 
