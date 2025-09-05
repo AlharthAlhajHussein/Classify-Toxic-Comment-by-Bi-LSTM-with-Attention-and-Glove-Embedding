@@ -1,6 +1,6 @@
 # 💬 Toxic Comment Classification with Bi-LSTM, Attention & GloVe Embeddings 🔬
 
-[![Python Version](https://img.shields.io/badge/python-3.9_|_3.10_|_3.11_|_3.12-blue.svg)](https://www.python.org/downloads/)
+[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![TensorFlow Version](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
 [![Keras Badge](https://img.shields.io/badge/Keras-Deep_Learning-red.svg)](https://keras.io/)
 <!--[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) <!-- You can create a LICENSE file -->
